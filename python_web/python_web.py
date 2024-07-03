@@ -1,18 +1,11 @@
 import reflex as rx
+from python_web.components.navbar import navbar
 
 class State(rx.State):
     pass
 
 def index() -> rx.Component:
-    return rx.hstack(
-        rx.text(
-            "diegosanchezmartin",
-            height="40px"
-        ),
-        position ="sticky",
-        bg="blue",
-        padding="16px"
-    )
+    return navbar()
 
 app = rx.App()
 app.add_page(index)
