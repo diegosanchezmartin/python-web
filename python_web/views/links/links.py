@@ -1,6 +1,7 @@
 import reflex as rx
+from python_web.components.link_button import link_button
 
 def links() -> rx.Component:
     return rx.vstack(
-        rx.button("LinkedIn")
+        link_button()
     )
