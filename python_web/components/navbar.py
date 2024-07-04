@@ -3,7 +3,7 @@ import reflex as rx
 def navbar() -> rx.Component:
     return rx.hstack(
         rx.text(
-            "diegosanchezmartin",
+            "</diegosanchezmartin>",
             height="40px"
         ),
         position ="sticky",
