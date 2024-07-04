@@ -16,5 +16,6 @@ def link_button(text: str, url: str) -> rx.Component:
         ),
         href=url,
         is_external=True,
-        width="100%"
+        width="100%",
+        text_decoration="none"
     )
