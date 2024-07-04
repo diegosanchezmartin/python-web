@@ -7,4 +7,5 @@ def links() -> rx.Component:
         link_button("GitHub","https://github.com/diegosanchezmartin"),
         link_button("Sobre mi","https://www.google.es"),
         link_button("Descargar CV", "https://www.google.es"),
+        width="100%"
     )
