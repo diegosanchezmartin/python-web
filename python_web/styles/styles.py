@@ -19,5 +19,9 @@ BASE_STYLE = {
         "display": "block",
         "padding": Size.SMALL.value,
         "border_radius": Size.DEFAULT.value
+    },
+    rx.link: {
+        "text_decoration": "none",
+        "_hover": {}
     }
 }
