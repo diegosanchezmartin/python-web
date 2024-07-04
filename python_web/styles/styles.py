@@ -5,7 +5,7 @@ from enum import Enum
 MAX_WIDTH = "600px"
 
 # Sizes
-class Spacer(Enum):
+class Size(Enum):
     SMALL="0.5em"
     DEFAULT="1em"
     BIG="2em"
@@ -17,7 +17,7 @@ BASE_STYLE = {
         "width": "100%",
         "height": "100%",
         "display": "block",
-        "padding": Spacer.SMALL.value,
-        "border_radius": Spacer.DEFAULT.value
+        "padding": Size.SMALL.value,
+        "border_radius": Size.DEFAULT.value
     }
 }
