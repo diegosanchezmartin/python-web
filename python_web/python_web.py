@@ -3,6 +3,8 @@ from python_web.components.navbar import navbar
 from python_web.views.header.header import header
 from python_web.views.links.links import links
 from python_web.components.footer import footer
+import python_web.styles.styles as styles
+
 class State(rx.State):
     pass
 
@@ -13,9 +15,9 @@ def index() -> rx.Component:
             rx.vstack(
                 header(),
                 links(),
-                max_width="600px",
+                max_width=styles.MAX_WIDTH,
                 width="100%",
-                margin_y="20px"
+                margin_y=styles.Spacer.BIG
             ),
         ),
         footer()
