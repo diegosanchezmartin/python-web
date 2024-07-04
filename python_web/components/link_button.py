@@ -6,14 +6,13 @@ def link_button(text: str, url: str) -> rx.Component:
             rx.hstack(
                 rx.icon(
                     tag="arrow_right",
-                    size=10,
+                    size=20,
                 ),
                 rx.vstack(
                     rx.text(text),
                     rx.text(text),
                 ),
             ),
-            width="100%"
         ),
         href=url,
         is_external=True,
