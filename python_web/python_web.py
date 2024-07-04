@@ -9,9 +9,14 @@ class State(rx.State):
 def index() -> rx.Component:
     return rx.box(
         navbar(),
-        rx.vstack(
-            header(),
-            links()
+        rx.center(
+            rx.vstack(
+                header(),
+                links(),
+                max_width="600px",
+                width="100%",
+                margin_y="20px"
+            ),
         ),
         footer()
     )
