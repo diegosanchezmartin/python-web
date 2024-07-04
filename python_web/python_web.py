@@ -4,6 +4,8 @@ from python_web.views.header.header import header
 from python_web.views.links.links import links
 from python_web.components.footer import footer
 import python_web.styles.styles as styles
+from python_web.styles.styles import Size as Size
+
 
 class State(rx.State):
     pass
@@ -17,7 +19,7 @@ def index() -> rx.Component:
                 links(),
                 max_width=styles.MAX_WIDTH,
                 width="100%",
-                margin_y=styles.Size.BIG
+                margin_y=Size.BIG
             ),
         ),
         footer()
