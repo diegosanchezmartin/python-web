@@ -21,7 +21,7 @@ def footer() -> rx.Component:
         rx.text(
             "From El Bierzo to the World, with ♥.",
             font_size = Size.MEDIUM.value,
-            margin_top="0px !important",
+            margin_top = Size.ZERO.value,
         ),
         align="center",
         margin_bottom = Size.BIG.value,

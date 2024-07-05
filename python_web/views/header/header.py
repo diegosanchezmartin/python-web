@@ -11,14 +11,14 @@ def header() -> rx.Component:
             rx.vstack(
                 rx.heading(
                     "Diego Sánchez Martín", 
-                    size="5",
-                    margin_bottom="0px !important",
+                    size = "5",
+                    margin_bottom = Size.ZERO.value,
                     color = TextColor.HEADER.value,
                 ),
                 rx.text(
                     "@diegosanchezmartin",
-                    margin_top="0px !important",
-                    margin_bottom="5px !important",
+                    margin_top = Size.ZERO.value,,
+                    margin_bottom = "5px !important",
                     color = TextColor.BODY.value,
                 ),
                 rx.hstack(
