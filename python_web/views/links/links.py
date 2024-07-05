@@ -27,5 +27,6 @@ def links() -> rx.Component:
             "Enlace para descargar mi CV", 
             "https://www.google.es"
         ),
-        width="100%"
+        width="100%",
+        spacing="2"
     )
