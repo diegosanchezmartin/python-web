@@ -17,7 +17,7 @@ def header() -> rx.Component:
                 ),
                 rx.text(
                     "@diegosanchezmartin",
-                    margin_top = Size.ZERO.value,,
+                    margin_top = Size.ZERO.value,
                     margin_bottom = "5px !important",
                     color = TextColor.BODY.value,
                 ),
