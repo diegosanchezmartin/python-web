@@ -33,11 +33,11 @@ def header() -> rx.Component:
             spacing="4",
         ),
         rx.flex(
-            info_text("+2", "años de experencia"),
+            info_text("2+", "años de experencia"),
             rx.spacer(),
-            info_text("+2", "años de experencia"),
+            info_text("10K+", "componentes automatizados"),
             rx.spacer(),
-            info_text("+2", "años de experencia"),
+            info_text("100+", "aplicaciones creadas"),
             width="100%"
         ),
         rx.text(
