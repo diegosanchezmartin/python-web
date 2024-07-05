@@ -2,20 +2,22 @@ import reflex as rx
 from python_web.components.link_icon import link_icon
 from python_web.components.info_text import info_text
 from python_web.styles.styles import Size as Size
+import python_web.styles.styles as styles
 
 def header() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(fallback="DSM", size="8"),
+            rx.avatar(fallback="DSM", size="7"),
             rx.vstack(
-                rx.spacer(),
                 rx.heading(
                     "Diego Sánchez Martín", 
-                    size="5"
+                    size="5",
+                    margin_bottom="0px !important"
                 ),
                 rx.text(
                     "@diegosanchezmartin",
-                    margin_top="0px !important"
+                    margin_top="0px !important",
+                    margin_bottom="5px !important"
                 ),
                 rx.hstack(
                     link_icon("https://www.x.com/diegosnchzmrtn"),
@@ -24,10 +26,11 @@ def header() -> rx.Component:
                     link_icon("https://www.tiktok.com/@diegosnchezmartin?_t=8nlNPDxoOtk&_r=1"),
                     link_icon("https://open.spotify.com/user/1162596043?si=475d0776b71a4f81"),
                 ),
-                rx.spacer(),
-                align_items="start",
-                height="100%",
+                spacing="0",
+                justify="center"
             ),
+            align_items="center",
+            spacing="4",
         ),
         rx.flex(
             info_text("+2", "años de experencia"),
