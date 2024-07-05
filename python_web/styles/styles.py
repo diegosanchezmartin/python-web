@@ -1,5 +1,6 @@
 import reflex as rx
 from enum import Enum
+from .colors import Color as Color
 
 # Constants
 MAX_WIDTH = "600px"
@@ -14,6 +15,7 @@ class Size(Enum):
 
 # Styles
 BASE_STYLE = {
+    "background_color": Color.BACKGROUND.value,
     rx.button: {
         "width": "100%",
         "height": "100%",
