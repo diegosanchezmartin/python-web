@@ -1,5 +1,6 @@
 import reflex as rx
 from python_web.components.link_icon import link_icon
+from python_web.components.info_text import info_text
 from python_web.styles.styles import Size as Size
 
 def header() -> rx.Component:
@@ -24,6 +25,9 @@ def header() -> rx.Component:
                 ),
                 align_items="start",
             ),
+        ),
+        rx.flex(
+            info_text("+2", "años de experencia")
         ),
         rx.text(
             """Soy ingeniero de software con una maestría en inteligencia artificial.
