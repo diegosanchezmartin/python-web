@@ -8,7 +8,7 @@ def footer() -> rx.Component:
             src="faviconDSM.png"
         ),
         rx.link(
-            "© 2022-" + format(current_year) + "<\\\\diegosanchezmartin> by Diego Sánchez Martín.",
+            "© 2022-" + format(current_year) + " <\\\\diegosanchezmartin> by Diego Sánchez Martín.",
             href="https://www.google.es",
             is_external=True),
         rx.text("From El Bierzo to the World, with ♥.")
