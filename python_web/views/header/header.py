@@ -2,7 +2,7 @@ import reflex as rx
 from python_web.components.link_icon import link_icon
 from python_web.components.info_text import info_text
 from python_web.styles.styles import Size as Size
-import python_web.styles.styles as styles
+from python_web.styles.colors import TextColor as TextColor
 
 def header() -> rx.Component:
     return rx.vstack(
@@ -12,12 +12,14 @@ def header() -> rx.Component:
                 rx.heading(
                     "Diego Sánchez Martín", 
                     size="5",
-                    margin_bottom="0px !important"
+                    margin_bottom="0px !important",
+                    color = TextColor.HEADER.value,
                 ),
                 rx.text(
                     "@diegosanchezmartin",
                     margin_top="0px !important",
-                    margin_bottom="5px !important"
+                    margin_bottom="5px !important",
+                    color = TextColor.BODY.value,
                 ),
                 rx.hstack(
                     link_icon("https://www.x.com/diegosnchzmrtn"),
@@ -41,10 +43,13 @@ def header() -> rx.Component:
             width="100%"
         ),
         rx.text(
-            """Soy ingeniero de software con una maestría en inteligencia artificial.
+            f"""
+            Soy ingeniero de software con una maestría en inteligencia artificial.
             Actualmente trabajo como QA Engineer en multiples aplicaciones: 
             Aplicaciones de escritorio, desarrollo web, firmware y plataformas móviles.
-            Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@! """
+            Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
+            """,
+            color = TextColor.BODY.value,
         ),
         align_items="start",
         spacing="5",
