@@ -8,6 +8,6 @@ def info_text(title:str, body: str) -> rx.Component:
             font_weight="bold",
             color="blue"
         ),
-        body,
+        f" {body}",
         font_size = Size.MEDIUM.value,
     )
