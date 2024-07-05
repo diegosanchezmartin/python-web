@@ -1,12 +1,16 @@
 import reflex as rx
 import datetime
 from python_web.styles.styles import Size as Size
+from python_web.styles.colors import TextColor as TextColor
 
 def footer() -> rx.Component:
     current_year = datetime.datetime.now().year
     return rx.vstack(
         rx.image(
-            src="faviconDSM.png"
+            src="logoDSM.png",
+            width=Size.ICON.value,
+            height="auto",
+            margin_top=""
         ),
         rx.link(
             "© 2022-" + format(current_year) + " <\\\\diegosanchezmartin> by Diego Sánchez Martín.",
@@ -19,5 +23,8 @@ def footer() -> rx.Component:
             font_size = Size.MEDIUM.value,
             margin_top="0px !important",
         ),
+        align="center",
         margin_bottom = Size.BIG.value,
+        padding_bottom = Size.BIG.value,
+        color = TextColor.FOOTER.value,
     )
