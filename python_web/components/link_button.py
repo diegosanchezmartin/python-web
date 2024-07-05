@@ -5,10 +5,14 @@ def link_button(title: str, body: str, url: str) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
-                rx.icon(
-                    tag="arrow_right",
-                    width=styles.Size.LARGE.value,
-                    height=styles.Size.LARGE.value,
+                rx.vstack(
+                    rx.spacer(),
+                    rx.icon(
+                        tag="arrow_right",
+                        width=styles.Size.LARGE.value,
+                        height=styles.Size.LARGE.value,
+                    ),
+                    rx.spacer(),
                 ),
                 rx.vstack(
                     rx.text(title, style=styles.button_title_style),
