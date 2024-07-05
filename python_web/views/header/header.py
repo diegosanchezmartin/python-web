@@ -8,6 +8,7 @@ def header() -> rx.Component:
         rx.hstack(
             rx.avatar(fallback="DSM", size="8"),
             rx.vstack(
+                rx.spacer(),
                 rx.heading(
                     "Diego Sánchez Martín", 
                     size="5"
@@ -23,11 +24,18 @@ def header() -> rx.Component:
                     link_icon("https://www.tiktok.com/@diegosnchezmartin?_t=8nlNPDxoOtk&_r=1"),
                     link_icon("https://open.spotify.com/user/1162596043?si=475d0776b71a4f81"),
                 ),
+                rx.spacer(),
                 align_items="start",
+                height="100%",
             ),
         ),
         rx.flex(
-            info_text("+2", "años de experencia")
+            info_text("+2", "años de experencia"),
+            rx.spacer(),
+            info_text("+2", "años de experencia"),
+            rx.spacer(),
+            info_text("+2", "años de experencia"),
+            width="100%"
         ),
         rx.text(
             """Soy ingeniero de software con una maestría en inteligencia artificial.
