@@ -20,14 +20,20 @@ def index() -> rx.Component:
                 max_width=styles.MAX_WIDTH,
                 width="100%",
                 margin_top = Size.BIG.value,
-                margin_bottom=Size.LARGE.value
+                margin_bottom=Size.ZERO.value,
+                padding=Size.BIG.value
             ),
-            margin_bottom=Size.SMALL.value
+            margin_bottom=Size.ZERO.value,
         ),
         footer()
     )
 
 app = rx.App(
-    style=styles.BASE_STYLE
+    style=styles.BASE_STYLE,
+    stylesheets=[
+        "/fonts/ArgentCF-Regular.css",
+        "/fonts/Montserrat.css",
+        "/fonts/Montserrat-Bold.css",
+    ],
 )
 app.add_page(index)
