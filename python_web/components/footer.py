@@ -24,7 +24,7 @@ def footer() -> rx.Component:
             margin_top = Size.ZERO.value,
         ),
         align="center",
-        margin_bottom = Size.BIG.value,
-        padding_bottom = Size.BIG.value,
+        margin_bottom = Size.MEDIUM.value,
+        padding_bottom = Size.SMALL.value,
         color = TextColor.FOOTER.value,
     )
