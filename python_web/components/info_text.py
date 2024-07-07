@@ -8,9 +8,9 @@ def info_text(title:str, body: str) -> rx.Component:
         rx.chakra.span(
             title,
             font_weight="bold",
-            color=Color.PRIMARY.value,
+            color=Color.PRIMARY.value
         ),
         f" {body}",
-        font_size = Size.MEDIUM.value,
+        font_size = Size.INTERMEDIATE.value,
         color = TextColor.BODY.value,
     )
