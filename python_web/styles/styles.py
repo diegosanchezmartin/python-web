@@ -17,12 +17,17 @@ class Size(Enum):
     DEFAULT="1em"
     LARGE="1.5em"
     BIG="2em",
-    ICON="16em",
+    ICON="12em",
 
 # Styles
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "background_color": Color.BACKGROUND.value,
+    rx.heading: {
+        "size": "5",
+        "color": TextColor.HEADER.value,
+        "font_family": Font.DEFAULT.value,
+    },
     rx.button: {
         "width": "100%",
         "height": "100%",
@@ -49,9 +54,7 @@ navbar_title_style = dict(
 
 title_style = dict(
     width="100%",
-    font_family = Font.TITLE.value,
     padding_top=Size.SMALL.value,
-    color = TextColor.HEADER.value,
 )
 
 button_title_style = dict(
