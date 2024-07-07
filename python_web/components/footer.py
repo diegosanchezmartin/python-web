@@ -7,10 +7,9 @@ def footer() -> rx.Component:
     current_year = datetime.datetime.now().year
     return rx.vstack(
         rx.image(
-            src="logoDSM.png",
+            src="logoDSMfooter.jpg",
             width=Size.ICON.value,
             height="auto",
-            margin_top=""
         ),
         rx.link(
             "© 2022-" + format(current_year) + " <\\\\diegosanchezmartin> by Diego Sánchez Martín.",
