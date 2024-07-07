@@ -3,17 +3,26 @@ from python_web.components.link_icon import link_icon
 from python_web.components.info_text import info_text
 from python_web.styles.styles import Size as Size
 from python_web.styles.colors import TextColor as TextColor
+from python_web.styles.colors import Color as Color
 
 def header() -> rx.Component:
     return rx.vstack(
         rx.hstack(
-            rx.avatar(fallback="DSM", size="7"),
+            rx.avatar(
+                fallback="DSM",
+                size="7",
+                src="iconoDiegoWeb.png",
+                color=TextColor.BODY.value,
+                bg=Color.CONTENT.value,
+                padding="2px",
+                border="4px solid",
+                border_color=Color.PRIMARY.value,
+                radius="full"
+            ),
             rx.vstack(
                 rx.heading(
                     "Diego Sánchez Martín", 
-                    size = "5",
                     margin_bottom = Size.ZERO.value,
-                    color = TextColor.HEADER.value,
                 ),
                 rx.text(
                     "@diegosanchezmartin",
@@ -22,11 +31,11 @@ def header() -> rx.Component:
                     color = TextColor.BODY.value,
                 ),
                 rx.hstack(
-                    link_icon("https://www.x.com/diegosnchzmrtn"),
-                    link_icon("https://www.instagram.com/diegosnchezmartin"),
-                    link_icon("https://www.facebook.com/diegosnchezmartin/"),
-                    link_icon("https://www.tiktok.com/@diegosnchezmartin?_t=8nlNPDxoOtk&_r=1"),
-                    link_icon("https://open.spotify.com/user/1162596043?si=475d0776b71a4f81"),
+                    link_icon("icons/x-twitter.svg","https://www.x.com/diegosnchzmrtn"),
+                    link_icon("icons/instagram.svg","https://www.instagram.com/diegosnchezmartin"),
+                    link_icon("icons/facebook.svg","https://www.facebook.com/diegosnchezmartin/"),
+                    link_icon("icons/tiktok.svg","https://www.tiktok.com/@diegosnchezmartin?_t=8nlNPDxoOtk&_r=1"),
+                    link_icon("icons/spotify.svg","https://open.spotify.com/user/1162596043?si=475d0776b71a4f81"),
                 ),
                 spacing="0",
                 justify="center"
@@ -49,6 +58,7 @@ def header() -> rx.Component:
             Aplicaciones de escritorio, desarrollo web, firmware y plataformas móviles.
             Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!
             """,
+            font_size=Size.MEDIUM.value,
             color = TextColor.BODY.value,
         ),
         align_items="start",
