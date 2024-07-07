@@ -36,4 +36,8 @@ app = rx.App(
         "/fonts/Montserrat-Bold.css",
     ],
 )
-app.add_page(index)
+app.add_page(
+    index,
+    title="DiegoSanchezMartin",
+    description="Soy ingeniero de software con una maestría en inteligencia artificial. Actualmente trabajo como QA Engineer en multiples aplicaciones: Aplicaciones de escritorio, desarrollo web, firmware y plataformas móviles. Aquí podrás encontrar todos mis enlaces de interés ¡Bienvenid@!"
+)
