@@ -13,7 +13,7 @@ def footer() -> rx.Component:
         ),
         rx.link(
             "© 2022-" + format(current_year) + " <\\\\diegosanchezmartin> by Diego Sánchez Martín.",
-            href="https://www.google.es",
+            href="http://diegosanchezmartin.dev",
             is_external=True,
             font_size = Size.MEDIUM.value,
         ),

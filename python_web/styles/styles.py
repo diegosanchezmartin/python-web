@@ -18,6 +18,7 @@ class Size(Enum):
     LARGE="1.5em"
     BIG="2em",
     ICON="12em",
+    LOGO="20em",
 
 # Styles
 BASE_STYLE = {
