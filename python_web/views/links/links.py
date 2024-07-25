@@ -1,5 +1,6 @@
 import reflex as rx
 from python_web.components.link_button import link_button
+from python_web.components.link_button_CV import link_button_CV
 from python_web.components.title import title
 from python_web.styles.styles import Size as Size
 
@@ -23,14 +24,13 @@ def links() -> rx.Component:
             "Sobre mi", 
             "Pagina web personal", 
             "icons/hand-solid.svg",
-            "https://www.google.es"
+            "http://www.diegosanchezmartin.es"
             ),
         title("Recursos disponibles"),
-        link_button(
+        link_button_CV(
             "Descargar CV", 
             "Enlace para descargar mi CV", 
             "icons/file-solid.svg",
-            "https://www.google.es"
         ),
         title("Contacto"),
         link_button(
