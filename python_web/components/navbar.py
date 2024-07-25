@@ -8,9 +8,10 @@ def navbar() -> rx.Component:
     return rx.hstack(
         rx.box(
             rx.chakra.span(
-                "</diegosanchezmartin>",
-                color = TextColor.HEADER.value,
-                font_size = Size.LARGE.value,
+                rx.image(src="logoDiegoSanchezMartin.png", 
+                         width=Size.LOGO, 
+                         height="auto",
+                         padding="5px 0px 5px 0px")
             ),
         ),
         position ="sticky",
